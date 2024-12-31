@@ -55,7 +55,7 @@ func MultipleParamsValue(writer http.ResponseWriter, request *http.Request) {
 
 	names := query["name"]
 
-	fmt.Fprintf(writer, strings.Join(names, " "))
+	fmt.Println(writer, strings.Join(names, " "))
 }
 
 func TestMultipleParamsValue(t *testing.T) {
